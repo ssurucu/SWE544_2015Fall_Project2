@@ -7,4 +7,8 @@ Commit List
 
 1) Commit:dbab848 04/01/2016 - Repository has been created and first commit has been tried with a readme file.
 
-2) Commit:        04/01/2016 - Requirements and Design document has been added to the repository.
+2) Commit:9238c10 04/01/2016 - Requirements and Design document has been added to the repository.
+
+3) Commit:a05b709 08/01/2016 - Server - Client basic functions and protocol interfaces are defined
+
+4) Commit:         08/01/2016 - UI design completed and related files are added to the repo

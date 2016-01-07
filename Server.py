@@ -1,5 +1,6 @@
 import socket # Import socket module
 from thread import *
+from PyQt4 import QtCore, QtGui, uic
 
 s = socket.socket() # Create a socket object
 host = socket.gethostname() # Get local machine name
