@@ -1,6 +1,39 @@
 import socket # Import socket module
 from thread import *
 from PyQt4 import QtCore, QtGui, uic
+from random import randint
+
+class Ticket():
+    generatedTicket = [[0 for x in range(5)] for x in range(3)]
+    # The class "constructor" - It's actually an initializer
+    def __init__(self):
+
+        print ""
+        for num in range(0,5) :
+            self.generatedTicket[0][num] = randint(0,99)
+        for num in range(0,5) :
+            self.generatedTicket[1][num] = randint(0,99)
+        for num in range(0,5) :
+            self.generatedTicket[2][num] = randint(0,99)
+
+        #print generatedTicket[0][0]
+        #print generatedTicket[2][2]
+
+    def __getitem__(self, generatedTicket):
+        return self.generatedTicket
+
+class User(object):
+    username = ""
+    addr = 0
+    assignedTicket = Ticket()[0]
+
+    # The class "constructor" - It's actually an initializer
+    def __init__(self, username, addr):
+        self.name = username
+        self.addr = addr
+        #self.major = assignedTicket
+
+
 
 s = socket.socket() # Create a socket object
 host = socket.gethostname() # Get local machine name
@@ -14,6 +47,13 @@ s.listen(5) # Now wait for client connection.
 def clientthread(conn):
     #Sending message to client
     conn.send('Welcome to the server.')
+
+    user1 = User("sdsad",3234)
+
+    print user1.assignedTicket[0][0]
+    print user1.assignedTicket[1][1]
+    print user1.assignedTicket[2][2]
+
 
     while True:
 

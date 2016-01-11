@@ -1,17 +1,22 @@
 import socket # Import socket module
 from PyQt4 import QtCore, QtGui, uic
 
+
+
+
 s = socket.socket() # Create a socket object
 host = socket.gethostname() # Get local machine name
 port = 12345 # Reserve a port for your service.
 
 s.connect((host, port))
 print s.recv(1024)
+host = raw_input("Please enter username: ")
+
 
 while True:
     data = s.recv(1024)
     print data
-    host = raw_input("Please enter hostname: ")
+
 
 
 class ClientPlayer():

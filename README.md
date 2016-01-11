@@ -11,4 +11,6 @@ Commit List
 
 3) Commit:a05b709 08/01/2016 - Server - Client basic functions and protocol interfaces are defined
 
-4) Commit:         08/01/2016 - UI design completed and related files are added to the repo
+4) Commit:fdce351 08/01/2016 - UI design completed and related files are added to the repo
+
+5) Commit:         11/01/2016 - Server side Ticket and User classes are defined, when a client connects Server creates a ticket for the user with random number between 1-99
