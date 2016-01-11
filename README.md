@@ -15,4 +15,6 @@ Commit List
 
 5) Commit:0f04003 11/01/2016 - Server side Ticket and User classes are defined, when a client connects Server creates a ticket for the user with random number between 1-99
 
-6) Commit:         11/01/2016 - Server is picking up number from the numbers list and returns it. Client side command is available now, for testing protocol rules
+6) Commit:c60aa36 11/01/2016 - Server is picking up number from the numbers list and returns it. Client side command is available now, for testing protocol rules
+
+6) Commit:        12/01/2016 - Broadcast message in server has been defined. Server-multiple client messaging added

@@ -77,16 +77,40 @@ def getRandomNumberFromStack():
         t.cancel()
     t.start()
 
+socketList = []
+sessionUserList = []
+def addUserToSession(username,port):
+    tempUser = User(username,port)
+    sessionUserList.append(tempUser)
+
+
+def broadcast (server_socket, sock, message):
+    for socket in socketList:
+        # send the message only to peer
+        if socket != server_socket and socket != sock :
+            try :
+                socket.send(message)
+            except :
+                # broken socket connection
+                socket.close()
+                # broken socket, remove it
+                if socket in socketList:
+                    socketList.remove(socket)
+
+
+
+
+
 def clientthread(conn):
     #Sending message to client
     conn.send('Welcome to the server.')
 
 
-    user1 = User("sdsad",3234)
 
-    print str(user1.assignedTicket[0][0]) +" | " +  str(user1.assignedTicket[0][1]) +" | " +  str(user1.assignedTicket[0][2])+" | " +  str(user1.assignedTicket[0][3])+" | " +  str(user1.assignedTicket[0][4])
-    print str(user1.assignedTicket[1][0]) +" | " +  str(user1.assignedTicket[1][1]) +" | " +  str(user1.assignedTicket[1][2])+" | " +  str(user1.assignedTicket[1][3])+" | " +  str(user1.assignedTicket[1][4])
-    print str(user1.assignedTicket[2][0]) +" | " +  str(user1.assignedTicket[2][1]) +" | " +  str(user1.assignedTicket[2][2])+" | " +  str(user1.assignedTicket[2][3])+" | " +  str(user1.assignedTicket[2][4])
+
+    #print str(user1.assignedTicket[0][0]) +" | " +  str(user1.assignedTicket[0][1]) +" | " +  str(user1.assignedTicket[0][2])+" | " +  str(user1.assignedTicket[0][3])+" | " +  str(user1.assignedTicket[0][4])
+    #print str(user1.assignedTicket[1][0]) +" | " +  str(user1.assignedTicket[1][1]) +" | " +  str(user1.assignedTicket[1][2])+" | " +  str(user1.assignedTicket[1][3])+" | " +  str(user1.assignedTicket[1][4])
+    #print str(user1.assignedTicket[2][0]) +" | " +  str(user1.assignedTicket[2][1]) +" | " +  str(user1.assignedTicket[2][2])+" | " +  str(user1.assignedTicket[2][3])+" | " +  str(user1.assignedTicket[2][4])
 
 
 
@@ -95,24 +119,26 @@ def clientthread(conn):
 
         #Receive from client
 
-        getRandomNumberFromStack()
+        #getRandomNumberFromStack()
         data = conn.recv(1024)
         reply = 'OK...' + data
         incomingParser(data)
         if not data:
             break
 
-        conn.sendall(reply)
+        #conn.sendall(reply)
 
     #came out of loop
     conn.close()
 
 
-
 while True:
     #wait to accept a connection - blocking call
     conn, addr = s.accept()
+    socketList.append(conn)
     print 'Connected with ' + addr[0] + ':' + str(addr[1])
+    #broadcast("a user Connected with " + addr[0] + ':' + str(addr[1]))
+    broadcast(s, conn, "[%s:%s] entered our gaming room\n" % addr)
 
     #start new thread takes 1st argument as a function name to be run, second is the tuple of arguments to the function.
     start_new_thread(clientthread ,(conn,))
@@ -122,9 +148,14 @@ while True:
          print data
          if data[0:3] == "TIC":
             # Answer with TOC
+            conn.send("TOC")
             print data
          if data[0:3] == "LOG":
             # User Login
+            print conn.getpeername()[1]
+            #if():
+
+            conn.sendall(data[4:]+" has joined the session")
             print data
          if data[0:3] == "QUI":
             # User Quit
@@ -144,3 +175,5 @@ while True:
          if data[0:3] == "CIN":
             # Cinko request
             print data
+         else:
+             conn.send("ERROR")
