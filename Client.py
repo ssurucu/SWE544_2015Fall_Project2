@@ -1,5 +1,6 @@
 import socket # Import socket module
-from PyQt4 import QtCore, QtGui, uic
+#from PyQt4 import QtCore, QtGui, uic
+import json
 
 
 
@@ -14,6 +15,8 @@ host = raw_input("Please enter username: ")
 
 
 while True:
+    h = raw_input("cmd: ")
+    s.send(h)
     data = s.recv(1024)
     print data
 
@@ -33,7 +36,7 @@ class ClientPlayer():
         print "server accepted login"
 
     def listCurrentSessions(self):
-        #this func lists current sessions in the server
+        #this func lists csurrent sessions in the server
         print "server accepted login"
 
     def joinASession(self,sessionname):

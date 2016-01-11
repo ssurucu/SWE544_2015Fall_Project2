@@ -13,4 +13,6 @@ Commit List
 
 4) Commit:fdce351 08/01/2016 - UI design completed and related files are added to the repo
 
-5) Commit:         11/01/2016 - Server side Ticket and User classes are defined, when a client connects Server creates a ticket for the user with random number between 1-99
+5) Commit:0f04003 11/01/2016 - Server side Ticket and User classes are defined, when a client connects Server creates a ticket for the user with random number between 1-99
+
+6) Commit:         11/01/2016 - Server is picking up number from the numbers list and returns it. Client side command is available now, for testing protocol rules

@@ -1,7 +1,9 @@
 import socket # Import socket module
 from thread import *
-from PyQt4 import QtCore, QtGui, uic
+#from PyQt4 import QtCore, QtGui, uic
 from random import randint
+import random
+import threading
 
 class Ticket():
     generatedTicket = [[0 for x in range(5)] for x in range(3)]
@@ -9,13 +11,30 @@ class Ticket():
     def __init__(self):
 
         print ""
+        a = "["
         for num in range(0,5) :
             self.generatedTicket[0][num] = randint(0,99)
+            a=a+str(self.generatedTicket[0][num])+","
+        a = a[:-1]
+        a=a+"]"
+
+        b = "["
         for num in range(0,5) :
             self.generatedTicket[1][num] = randint(0,99)
+            b=b+str(self.generatedTicket[1][num])+","
+        b = b[:-1]
+        b=b+"]"
+
+
+        c = "["
         for num in range(0,5) :
             self.generatedTicket[2][num] = randint(0,99)
+            c=c+str(self.generatedTicket[2][num])+","
+        c = c[:-1]
+        c=c+"]"
 
+
+        print "["+ a + "," + b + "," + c + "]"
         #print generatedTicket[0][0]
         #print generatedTicket[2][2]
 
@@ -43,23 +62,43 @@ s.bind((host, port)) # Bind to the port
 print 'Waiting for connections'
 s.listen(5) # Now wait for client connection.
 
+numberList=set(range(1,99))
+
+def getRandomNumberFromStack():
+    t = threading.Timer(0.2, getRandomNumberFromStack)
+    isGameFinished = False
+    if(len(numberList)>0 and not isGameFinished):
+        pickedNumber = random.choice(list(numberList))
+        numberList.remove(pickedNumber)
+        print(pickedNumber)
+    else:
+        print "Game has finished"
+        isGameFinished = True
+        t.cancel()
+    t.start()
 
 def clientthread(conn):
     #Sending message to client
     conn.send('Welcome to the server.')
 
+
     user1 = User("sdsad",3234)
 
-    print user1.assignedTicket[0][0]
-    print user1.assignedTicket[1][1]
-    print user1.assignedTicket[2][2]
+    print str(user1.assignedTicket[0][0]) +" | " +  str(user1.assignedTicket[0][1]) +" | " +  str(user1.assignedTicket[0][2])+" | " +  str(user1.assignedTicket[0][3])+" | " +  str(user1.assignedTicket[0][4])
+    print str(user1.assignedTicket[1][0]) +" | " +  str(user1.assignedTicket[1][1]) +" | " +  str(user1.assignedTicket[1][2])+" | " +  str(user1.assignedTicket[1][3])+" | " +  str(user1.assignedTicket[1][4])
+    print str(user1.assignedTicket[2][0]) +" | " +  str(user1.assignedTicket[2][1]) +" | " +  str(user1.assignedTicket[2][2])+" | " +  str(user1.assignedTicket[2][3])+" | " +  str(user1.assignedTicket[2][4])
+
+
 
 
     while True:
 
         #Receive from client
+
+        getRandomNumberFromStack()
         data = conn.recv(1024)
         reply = 'OK...' + data
+        incomingParser(data)
         if not data:
             break
 
@@ -78,7 +117,8 @@ while True:
     #start new thread takes 1st argument as a function name to be run, second is the tuple of arguments to the function.
     start_new_thread(clientthread ,(conn,))
 
-    def incomingParser(self, data):
+
+    def incomingParser(data):
          print data
          if data[0:3] == "TIC":
             # Answer with TOC
