@@ -19,4 +19,4 @@ Commit List
 
 8) Commit:68f350a 12/01/2016 - Broadcast message in server has been defined. Server-multiple client messaging added
 
-7) Commit:        12/01/2016 - Client side UI has been connected to the controller. Server side now has two threads for incoming-outgoing messages.
+7) Commit:        12/01/2016 - Server side now has two threads for incoming-outgoing messages.
