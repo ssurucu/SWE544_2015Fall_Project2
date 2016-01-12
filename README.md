@@ -21,4 +21,6 @@ Commit List
 
 8) Commit:6805e9c 12/01/2016 - Server side now has two threads for incoming-outgoing messages.
 
-9) Commit:        12/01/2016 - Client side now has two threads for incoming-outgoing messages.
+9) Commit:05c0bdf 12/01/2016 - Client side now has two threads for incoming-outgoing messages.
+
+10) Commit:        12/01/2016 - Client side now has two threads for incoming-outgoing messages. (FIX: Wrong file commit)
