@@ -7,11 +7,12 @@ from tombalaGameUI import Ui_MainWindow
 import time
 
 screenQueue = Queue.Queue()
+selectedNumber = "44"
 threadQueue = Queue.Queue()
 onlineMemberQueue = Queue.Queue()
 s = socket.socket()
 host = socket.gethostname()
-port = 12345
+port = 5000
 username=""
 
 
@@ -20,6 +21,7 @@ class ClientDialog(QtGui.QMainWindow):
         QtGui.QWidget.__init__(self, parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.ui.pushButton.clicked.connect(self.CinkoPress)
 
         print threading.current_thread()
         self.show()
@@ -34,8 +36,13 @@ class ClientDialog(QtGui.QMainWindow):
 
         # timer has been set for updating member list every 1.5s
         self.timer2 = QtCore.QTimer()
-        self.timer2.timeout.connect(self.memberListRefresh)
+        #self.timer2.timeout.connect(self.memberListRefresh)
         #self.timer2.start(1500)
+
+        self.timer3 = QtCore.QTimer()
+        self.timer3.timeout.connect(self.updateSelectedNumber)
+        self.timer3.start(10)
+
 
         readerThread = ReadQThread()
         readerThread.data_read.connect(self.updateChannelWindow)
@@ -47,7 +54,10 @@ class ClientDialog(QtGui.QMainWindow):
         self.threads.append(writerThread)
         writerThread.start()
 
-        threadQueue._put("LOG "+username)
+        #threadQueue._put("LOG "+username)
+
+    def CinkoPress(self):
+        threadQueue._put("CIN")
 
     # this function parses the message texts into the format of protocol
     def outgoing_parser(self, data):
@@ -60,6 +70,8 @@ class ClientDialog(QtGui.QMainWindow):
             self.ui.listWidget.addItem(unicode(queue_message))
             self.ui.listWidget.scrollToBottom()
 
+    def updateSelectedNumber(self):
+        self.ui.label_2.setText(selectedNumber)
 
     #Initial functions
     def loginToServer(self,username):
@@ -107,16 +119,21 @@ class ClientDialog(QtGui.QMainWindow):
 
 class ReadQThread(QtCore.QThread):
     data_read = QtCore.pyqtSignal(object)
-
     def __init__(self):
         QtCore.QThread.__init__(self)
 
     def run(self):
+        time.sleep(2)
         while True:
             data = s.recv(1024)
+            print data
             self.incoming_parser(data)
 
     def incoming_parser(self, data):
+        #print data
+        screenQueue._put(data)
+        global selectedNumber
+
         if data[0:3] == "TIC":
             # Connection ping
             print 'data'
@@ -145,8 +162,10 @@ class ReadQThread(QtCore.QThread):
             #User is getting the ticket
             print 'data'
         if data[0:3] == "PNA":
+            selectedNumber = str(data[4:])
+            screenQueue._put(selectedNumber)
+            print data[4:]
             #Randomly picked number announce
-            print 'data'
         if data[0:3] == "NSA":
             #User selects number
             print 'data'
@@ -185,6 +204,7 @@ class WriteQThread(QtCore.QThread):
     def run(self):
         while True:
             if threadQueue.qsize() > 0:
+                print "sdasd"
                 queue_message = threadQueue.get()
                 try:
                     s.send(queue_message)

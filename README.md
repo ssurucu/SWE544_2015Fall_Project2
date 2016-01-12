@@ -23,4 +23,6 @@ Commit List
 
 9) Commit:05c0bdf 12/01/2016 - Client side now has two threads for incoming-outgoing messages.
 
-10) Commit:        12/01/2016 - Client side now has two threads for incoming-outgoing messages. (FIX: Wrong file commit)
+10) Commit:66a2ffa 12/01/2016 - Client side now has two threads for incoming-outgoing messages. (FIX: Wrong file commit)
+
+11) Commit:        12/01/2016 - Picked number on the server now broadcast to all clients, client can check for Cinko (dummy service). Client-Server messaging is succesfully implemented. Broadcast and message sendin to a selected client is completed. Server side has been redesigned, it now creates a new thread for every client connection.
