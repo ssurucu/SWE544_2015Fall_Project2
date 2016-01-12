@@ -7,7 +7,8 @@ from tombalaGameUI import Ui_MainWindow
 import time
 
 screenQueue = Queue.Queue()
-selectedNumber = "44"
+selectedNumber = "-"
+ticketArray = []
 threadQueue = Queue.Queue()
 onlineMemberQueue = Queue.Queue()
 s = socket.socket()
@@ -58,6 +59,25 @@ class ClientDialog(QtGui.QMainWindow):
 
     def CinkoPress(self):
         threadQueue._put("CIN")
+
+    def fillTicket(self):
+        self.ui.label_0_0.setText(str(ticketArray[0][0]))
+        self.ui.label_0_1.setText(str(ticketArray[0][1]))
+        self.ui.label_0_2.setText(str(ticketArray[0][2]))
+        self.ui.label_0_3.setText(str(ticketArray[0][3]))
+        self.ui.label_0_4.setText(str(ticketArray[0][4]))
+        self.ui.label_1_0.setText(str(ticketArray[1][0]))
+        self.ui.label_1_1.setText(str(ticketArray[1][1]))
+        self.ui.label_1_2.setText(str(ticketArray[1][2]))
+        self.ui.label_1_3.setText(str(ticketArray[1][3]))
+        self.ui.label_1_4.setText(str(ticketArray[1][4]))
+        self.ui.label_2_0.setText(str(ticketArray[2][0]))
+        self.ui.label_2_1.setText(str(ticketArray[2][1]))
+        self.ui.label_2_2.setText(str(ticketArray[2][2]))
+        self.ui.label_2_3.setText(str(ticketArray[2][3]))
+        self.ui.label_2_4.setText(str(ticketArray[2][4]))
+
+
 
     # this function parses the message texts into the format of protocol
     def outgoing_parser(self, data):
@@ -115,6 +135,7 @@ class ClientDialog(QtGui.QMainWindow):
         s.connect((host, int(port)))
 
         self.ui.listWidget.addItem('Now you are connected to the server! Wait for the game to start')
+        self.ui.listWidget.addItem('Just wait until 3 people are joined the game')
         self.ui.listWidget.addItem('---------------------------------------------------')
 
 class ReadQThread(QtCore.QThread):
@@ -131,8 +152,9 @@ class ReadQThread(QtCore.QThread):
 
     def incoming_parser(self, data):
         #print data
-        screenQueue._put(data)
+        #screenQueue._put(data)
         global selectedNumber
+        global assignedTicket
 
         if data[0:3] == "TIC":
             # Connection ping
@@ -157,13 +179,14 @@ class ReadQThread(QtCore.QThread):
             print 'data'
         if data[0:3] == "GWS":
             #Session ready, game will start
-            print 'data'
+            screenQueue._put(str(data[4:]))
         if data[0:3] == "ATI":
             #User is getting the ticket
-            print 'data'
+            assignedTicket = data[4:]
+            self.fillTheTicket()
         if data[0:3] == "PNA":
             selectedNumber = str(data[4:])
-            screenQueue._put(selectedNumber)
+            #screenQueue._put(selectedNumber)
             print data[4:]
             #Randomly picked number announce
         if data[0:3] == "NSA":
@@ -194,6 +217,23 @@ class ReadQThread(QtCore.QThread):
             #Command error
             print 'data'
 
+    def fillTheTicket(self):
+        #this func lists csurrent sessions in the server
+        global ticketArray
+        ticket= []
+        print assignedTicket
+        ticketRows = assignedTicket.split(";")
+        ticketRow0 = ticketRows[0].split(",")
+        ticketRow1 = ticketRows[1].split(",")
+        ticketRow2 = ticketRows[2].split(",")
+
+        ticket.append(ticketRow0)
+        ticket.append(ticketRow1)
+        ticket.append(ticketRow2)
+
+        ticketArray = ticket
+        myapp.fillTicket()
+
 
 class WriteQThread(QtCore.QThread):
     data_read = QtCore.pyqtSignal(object)
@@ -215,7 +255,8 @@ class WriteQThread(QtCore.QThread):
 
 if __name__ == '__main__':
     app = QtGui.QApplication(sys.argv)
-    username = raw_input("Please enter username: ")
+    #username = raw_input("Please enter username: ")
+    username = "sinan"
     myapp = ClientDialog()
     # myapp.show()
     sys.exit(app.exec_())
