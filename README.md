@@ -27,4 +27,6 @@ Commit List
 
 11) Commit:13b1bd1 12/01/2016 - Picked number on the server now broadcast to all clients, client can check for Cinko (dummy service). Client-Server messaging is succesfully implemented. Broadcast and message sendin to a selected client is completed. Server side has been redesigned, it now creates a new thread for every client connection.
 
-12) Commit:        12/01/2016 - Server side generates the tickets and assigns it to the clients, and clients shows the tickets to the user
+12) Commit:6d79da0 12/01/2016 - Server side generates the tickets and assigns it to the clients, and clients shows the tickets to the user
+
+13) Commit:        12/01/2016 - UI fixes has been made. User can se the picked number with different background color, so the numbers that are picked before can be seen on the left side of the UI. USer also can sign/select number on his/her ticket

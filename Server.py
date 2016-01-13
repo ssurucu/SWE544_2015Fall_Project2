@@ -82,7 +82,7 @@ class ClientThread(threading.Thread):
         self.socket.send("sent:" +message)
 
 
-numberList=set(range(1,99))
+numberList=set(range(1,100))
 
 def broadcastMessage(message):
     for socket in socketList:
@@ -90,7 +90,7 @@ def broadcastMessage(message):
 
 
 def getRandomNumberFromStack():
-    t = threading.Timer(1, getRandomNumberFromStack)
+    t = threading.Timer(0.3, getRandomNumberFromStack)
     isGameFinished = False
     if(len(numberList)>0 and not isGameFinished):
         pickedNumber = random.choice(list(numberList))
@@ -99,6 +99,7 @@ def getRandomNumberFromStack():
         broadcastMessage("PNA " + str(pickedNumber))
     else:
         print "Game has finished"
+        broadcastMessage("PNA ")
         isGameFinished = True
         t.cancel()
     t.start()

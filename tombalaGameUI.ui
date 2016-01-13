@@ -42,7 +42,10 @@
      </font>
     </property>
     <property name="text">
-     <string>48</string>
+     <string>-</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -61,7 +64,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="label_01">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -88,7 +91,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="label_02">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -115,7 +118,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="label_06">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -142,7 +145,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="label_07">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -169,7 +172,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="label_04">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -196,7 +199,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="label_03">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -223,7 +226,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="label_08">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -250,7 +253,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="label_09">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -304,7 +307,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_13">
+   <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -331,7 +334,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_14">
+   <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -358,7 +361,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_15">
+   <widget class="QLabel" name="label_17">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -385,7 +388,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_16">
+   <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -412,7 +415,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_17">
+   <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -493,7 +496,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_20">
+   <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -547,7 +550,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_22">
+   <widget class="QLabel" name="label_26">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -574,7 +577,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_23">
+   <widget class="QLabel" name="label_27">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -628,7 +631,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_25">
+   <widget class="QLabel" name="label_23">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -655,7 +658,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_26">
+   <widget class="QLabel" name="label_28">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -682,7 +685,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_27">
+   <widget class="QLabel" name="label_29">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -709,7 +712,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_28">
+   <widget class="QLabel" name="label_49">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -736,7 +739,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_29">
+   <widget class="QLabel" name="label_46">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -763,7 +766,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_30">
+   <widget class="QLabel" name="label_54">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -790,7 +793,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_31">
+   <widget class="QLabel" name="label_39">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -817,7 +820,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_32">
+   <widget class="QLabel" name="label_37">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -844,7 +847,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_33">
+   <widget class="QLabel" name="label_56">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -871,7 +874,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_34">
+   <widget class="QLabel" name="label_51">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -898,7 +901,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_35">
+   <widget class="QLabel" name="label_43">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -925,7 +928,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_36">
+   <widget class="QLabel" name="label_57">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -952,7 +955,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_37">
+   <widget class="QLabel" name="label_41">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -979,7 +982,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_38">
+   <widget class="QLabel" name="label_58">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1006,7 +1009,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_39">
+   <widget class="QLabel" name="label_31">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1033,7 +1036,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_40">
+   <widget class="QLabel" name="label_42">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1060,7 +1063,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_41">
+   <widget class="QLabel" name="label_52">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1087,7 +1090,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_42">
+   <widget class="QLabel" name="label_36">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1114,7 +1117,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_43">
+   <widget class="QLabel" name="label_34">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -1141,7 +1144,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_44">
+   <widget class="QLabel" name="label_48">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1168,7 +1171,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_45">
+   <widget class="QLabel" name="label_47">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1195,7 +1198,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_46">
+   <widget class="QLabel" name="label_33">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1222,7 +1225,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_47">
+   <widget class="QLabel" name="label_32">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1249,7 +1252,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_48">
+   <widget class="QLabel" name="label_44">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -1276,7 +1279,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_49">
+   <widget class="QLabel" name="label_38">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1303,7 +1306,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_50">
+   <widget class="QLabel" name="label_53">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1330,7 +1333,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_51">
+   <widget class="QLabel" name="label_59">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -1357,7 +1360,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_52">
+   <widget class="QLabel" name="label_60">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1384,7 +1387,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_53">
+   <widget class="QLabel" name="label_30">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1411,7 +1414,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_54">
+   <widget class="QLabel" name="label_55">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1438,7 +1441,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_55">
+   <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1465,7 +1468,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_56">
+   <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1492,7 +1495,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_57">
+   <widget class="QLabel" name="label_45">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1519,7 +1522,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_58">
+   <widget class="QLabel" name="label_20">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1546,7 +1549,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_59">
+   <widget class="QLabel" name="label_05">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1573,7 +1576,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_60">
+   <widget class="QLabel" name="label_50">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1600,7 +1603,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_61">
+   <widget class="QLabel" name="label_40">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1627,7 +1630,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_62">
+   <widget class="QLabel" name="label_25">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1654,7 +1657,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_63">
+   <widget class="QLabel" name="label_35">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1681,7 +1684,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_64">
+   <widget class="QLabel" name="label_87">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1708,7 +1711,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_65">
+   <widget class="QLabel" name="label_88">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1735,7 +1738,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_66">
+   <widget class="QLabel" name="label_90">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1762,7 +1765,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_67">
+   <widget class="QLabel" name="label_92">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1789,7 +1792,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_68">
+   <widget class="QLabel" name="label_85">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -1816,7 +1819,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_69">
+   <widget class="QLabel" name="label_82">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -1843,7 +1846,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_70">
+   <widget class="QLabel" name="label_96">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1870,7 +1873,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_71">
+   <widget class="QLabel" name="label_83">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1897,7 +1900,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_72">
+   <widget class="QLabel" name="label_71">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1951,7 +1954,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_74">
+   <widget class="QLabel" name="label_86">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1978,7 +1981,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_75">
+   <widget class="QLabel" name="label_84">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2005,7 +2008,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_76">
+   <widget class="QLabel" name="label_80">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -2032,7 +2035,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_77">
+   <widget class="QLabel" name="label_70">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -2059,7 +2062,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_78">
+   <widget class="QLabel" name="label_65">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -2086,7 +2089,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_79">
+   <widget class="QLabel" name="label_63">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -2113,7 +2116,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_80">
+   <widget class="QLabel" name="label_91">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -2140,7 +2143,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_81">
+   <widget class="QLabel" name="label_93">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -2167,7 +2170,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_82">
+   <widget class="QLabel" name="label_66">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -2194,7 +2197,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_83">
+   <widget class="QLabel" name="label_76">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -2221,7 +2224,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_84">
+   <widget class="QLabel" name="label_98">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -2248,7 +2251,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_85">
+   <widget class="QLabel" name="label_95">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -2275,7 +2278,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_86">
+   <widget class="QLabel" name="label_99">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2302,7 +2305,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_87">
+   <widget class="QLabel" name="label_97">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -2329,7 +2332,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_88">
+   <widget class="QLabel" name="label_61">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -2356,7 +2359,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_90">
+   <widget class="QLabel" name="label_75">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -2383,7 +2386,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_91">
+   <widget class="QLabel" name="label_89">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2410,7 +2413,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_92">
+   <widget class="QLabel" name="label_78">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -2437,7 +2440,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_93">
+   <widget class="QLabel" name="label_74">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2464,7 +2467,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_94">
+   <widget class="QLabel" name="label_72">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -2491,7 +2494,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_95">
+   <widget class="QLabel" name="label_62">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -2518,7 +2521,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_96">
+   <widget class="QLabel" name="label_94">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2545,7 +2548,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_97">
+   <widget class="QLabel" name="label_68">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -2572,7 +2575,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_98">
+   <widget class="QLabel" name="label_79">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2599,7 +2602,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_99">
+   <widget class="QLabel" name="label_64">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2626,7 +2629,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_100">
+   <widget class="QLabel" name="label_81">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -2653,7 +2656,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_101">
+   <widget class="QLabel" name="label_77">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -2680,7 +2683,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_102">
+   <widget class="QLabel" name="label_67">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -2707,7 +2710,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_103">
+   <widget class="QLabel" name="label_69">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -2754,7 +2757,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_104">
+   <widget class="QLabel" name="label_otherPlayers">
     <property name="geometry">
      <rect>
       <x>490</x>
@@ -2772,7 +2775,7 @@
      <string>Other Players</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_105">
+   <widget class="QLabel" name="label_pic1">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -2785,7 +2788,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Users/User/Desktop/1.jpg</pixmap>
+     <pixmap>../../../Desktop/1.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2807,7 +2810,7 @@
      <string>CINKO</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_106">
+   <widget class="QLabel" name="label_pic2">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -2820,7 +2823,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Users/User/Desktop/4.jpg</pixmap>
+     <pixmap>../../../Desktop/4.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2835,7 +2838,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_108">
+   <widget class="QLabel" name="label_pic4">
     <property name="geometry">
      <rect>
       <x>830</x>
@@ -2851,7 +2854,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Users/User/Desktop/3.jpg</pixmap>
+     <pixmap>../../../Desktop/3.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2860,7 +2863,7 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_107">
+   <widget class="QLabel" name="label_pic3">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -2873,7 +2876,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Users/User/Desktop/21.jpg</pixmap>
+     <pixmap>../../../Desktop/21.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2888,7 +2891,7 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QLabel" name="label_109">
+   <widget class="QLabel" name="label_p1">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -2909,7 +2912,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_110">
+   <widget class="QLabel" name="label_p2">
     <property name="geometry">
      <rect>
       <x>410</x>
@@ -2930,7 +2933,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_111">
+   <widget class="QLabel" name="label_p3">
     <property name="geometry">
      <rect>
       <x>620</x>
@@ -2951,7 +2954,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_112">
+   <widget class="QLabel" name="label_p4">
     <property name="geometry">
      <rect>
       <x>830</x>
@@ -2972,385 +2975,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_0_0">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>500</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_0_1">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>500</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_0_2">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>500</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_0_3">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>500</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_0_4">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>500</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_1_0">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>590</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2_0">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>680</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_1_1">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>590</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_1_2">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>590</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_1_3">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>590</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_1_4">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>590</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2_1">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>680</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2_2">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>680</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2_3">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>680</y>
-      <width>110</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
-    </property>
-    <property name="text">
-     <string>99</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2_4">
+   <widget class="QPushButton" name="label_2_4">
     <property name="geometry">
      <rect>
       <x>770</x>
@@ -3364,17 +2989,260 @@
       <pointsize>30</pointsize>
      </font>
     </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
+    <property name="text">
+     <string>-</string>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:yellow;</string>
+   </widget>
+   <widget class="QPushButton" name="label_0_0">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>500</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
     </property>
     <property name="text">
-     <string>99</string>
+     <string>-</string>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+   </widget>
+   <widget class="QPushButton" name="label_0_1">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>500</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_0_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>500</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_0_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>500</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_0_4">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>500</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_1_0">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>590</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_1_1">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>590</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_1_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>590</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_1_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>590</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_1_4">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>590</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_2_0">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>680</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_2_1">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>680</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_2_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>680</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="label_2_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>680</y>
+      <width>110</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
     </property>
    </widget>
   </widget>
