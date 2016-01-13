@@ -29,4 +29,6 @@ Commit List
 
 12) Commit:6d79da0 12/01/2016 - Server side generates the tickets and assigns it to the clients, and clients shows the tickets to the user
 
-13) Commit:        12/01/2016 - UI fixes has been made. User can se the picked number with different background color, so the numbers that are picked before can be seen on the left side of the UI. USer also can sign/select number on his/her ticket
+13) Commit:3c7bc03 12/01/2016 - UI fixes has been made. User can se the picked number with different background color, so the numbers that are picked before can be seen on the left side of the UI. USer also can sign/select number on his/her ticket
+
+14) Commit:        12/01/2016 - Cinko validation is added, user is banned after 3 invalid cinko requests

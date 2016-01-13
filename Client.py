@@ -73,7 +73,7 @@ class ClientDialog(QtGui.QMainWindow):
         self.threads.append(writerThread)
         writerThread.start()
 
-        #threadQueue._put("LOG "+username)
+        self.loginToServer(username)
 
     def CinkoPress(self):
         threadQueue._put("CIN")
@@ -366,6 +366,7 @@ class ClientDialog(QtGui.QMainWindow):
     #Initial functions
     def loginToServer(self,username):
         #this func porvides login to server
+        threadQueue._put("LOG "+username)
         print "server accepted login"
 
     def quitFromServer(self):
@@ -465,12 +466,16 @@ class ReadQThread(QtCore.QThread):
             print 'data'
         if data[0:3] == "CRA":
             #Cinko requested, cinko is valid
+            screenQueue._put(data)
             print 'data'
         if data[0:3] == "CRR":
             #Cinko requested, cinko is invalid
+            screenQueue._put("Your cinko is invalid")
+            screenQueue._put("Careful! After 3 invalid Cinkos, you will be banned!")
             print 'data'
         if data[0:3] == "CRB":
             #Too many invalid Cinko request, user banned for the session
+            screenQueue._put("Too many invalid cinkos. You are banned for this session")
             print 'data'
         if data[0:3] == "LBA":
             #Learn Cinko status of a user
