@@ -31,4 +31,6 @@ Commit List
 
 13) Commit:3c7bc03 12/01/2016 - UI fixes has been made. User can se the picked number with different background color, so the numbers that are picked before can be seen on the left side of the UI. USer also can sign/select number on his/her ticket
 
-14) Commit:        12/01/2016 - Cinko validation is added, user is banned after 3 invalid cinko requests
+14) Commit:413bd9e 12/01/2016 - Cinko validation is added, user is banned after 3 invalid cinko requests
+
+15) Commit:        12/01/2016 - Game winning condition and announcement has been added. Players can see each other's cinko status dynamically
