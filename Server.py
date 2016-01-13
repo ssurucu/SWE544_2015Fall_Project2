@@ -136,7 +136,7 @@ def broadcastMessage(message):
 
 
 def getRandomNumberFromStack():
-    t = threading.Timer(1, getRandomNumberFromStack)
+    t = threading.Timer(3, getRandomNumberFromStack)
     isGameFinished = False
     if(len(numberList)>0 and not isGameFinished):
         pickedNumber = random.choice(list(numberList))

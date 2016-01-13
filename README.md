@@ -35,4 +35,6 @@ Commit List
 
 15) Commit:15d4be8 12/01/2016 - Game winning condition and announcement has been added. Players can see each other's cinko status dynamically
 
-16) Commit:        12/01/2016 - Username will be used for login function, and the winner will be announced by username. Also users can see each others username and cinko statusses.
+16) Commit:f00055b 12/01/2016 - Username will be used for login function, and the winner will be announced by username. Also users can see each others username and cinko statusses.
+
+17) Commit:        13/01/2016 - FINAL COMMIT. Final Report documents are added. 
