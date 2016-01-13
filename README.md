@@ -33,4 +33,6 @@ Commit List
 
 14) Commit:413bd9e 12/01/2016 - Cinko validation is added, user is banned after 3 invalid cinko requests
 
-15) Commit:        12/01/2016 - Game winning condition and announcement has been added. Players can see each other's cinko status dynamically
+15) Commit:15d4be8 12/01/2016 - Game winning condition and announcement has been added. Players can see each other's cinko status dynamically
+
+16) Commit:        12/01/2016 - Username will be used for login function, and the winner will be announced by username. Also users can see each others username and cinko statusses.

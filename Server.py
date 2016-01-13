@@ -14,7 +14,8 @@ tcpsock.bind((host,port))
 threads = []
 socketList = []
 portList = []
-cinkoCount = []
+cinkoCount = [0,0,0,0]
+usernameList = ["user1","user2","user3","user4"]
 wrongCinkoCount  = []
 
 
@@ -40,9 +41,9 @@ class ListenerThread(threading.Thread):
             socketList.append(clientsock)
             #tcpsock.sendall("a user joined")
             #newthread.sendMessageToClient("sssss")
-            if(len(socketList)==3):
+            if(len(socketList)==4):
                 time.sleep(3)
-                broadcastMessage("GWS Game will start in 3 seconds")
+                broadcastMessage("GWS "+str(usernameList))
                 time.sleep(3)
                 assignTickets()
                 getRandomNumberFromStack()
@@ -64,6 +65,7 @@ def incomingParser(self,data,port):
         print data
      if data[0:3] == "LOG":
         # User Login
+        return loginUser(port, data[4:])
         print data
      if data[0:3] == "QUI":
         # User Quit
@@ -83,6 +85,9 @@ def incomingParser(self,data,port):
      if data[0:3] == "CIN":
         # Cinko request
         return checkUserCinko(port)
+     if data[0:3] == "LBS":
+        # Cinko request
+        return getCinkoInfo(port)
      else:
         #conn.send("ERROR")
         print data
@@ -112,15 +117,14 @@ class ClientThread(threading.Thread):
             data = self.socket.recv(2048)
             answer = incomingParser(self,data,self.port )
             self.socket.send(str(answer))
-            #else:
-             #   print "Client sent : "+data
-             #   self.socket.send("You sent me : "+data)
 
         print "Client disconnected..."
 
     def sendMessageToClient(self,message):
         # use self.socket to send/receive
         self.socket.send("sent:" +message)
+
+
 
 
 numberList=set(range(1,100))
@@ -155,7 +159,7 @@ def assignTickets():
         tempTicket = Ticket()
         tempTicketNumbs = tempTicket.getTicket()
         userTickets.append(tempTicketNumbs)
-        cinkoCount.append(0)
+        #cinkoCount.append(0)
         wrongCinkoCount.append(0)
         print "tickTemp : " + str(tempTicket.getTicketArray())
         #userTicketArray.append(tempTicketNumbs)
@@ -172,36 +176,22 @@ def assignTickets():
 
         userTicketArray.append(ticket)
 
+def getCinkoInfo(port):
+    return "LBA "+str(cinkoCount)
 
-
-
-
-    print "tic1" + str(userTicketArray[0])
-    print "tic2" + str(userTicketArray[1])
-    print "tic3" + str(userTicketArray[2])
-
-
-
-
-broadcastMessage("game will start after 10 secs")
-time.sleep(10)
-
-
+def loginUser(port, username):
+    userIndex = portList.index(str(port))
+    usernameList[userIndex] = username
+    return "HEL"
 
 def checkUserCinko(port):
     userIndex = portList.index(str(port))
     if(str(wrongCinkoCount[userIndex])=="3"):
         return "CRB you are banned"
     else:
-
-        #print "USER: "+str(userIndex)
-
-
         tempTicket = userTicketArray[userIndex]
-        #print "Ticket:" + userTickets[userIndex]
         CinkoPrev = cinkoCount[userIndex]
         CinkoCount = 0
-        #print str(CinkoPrev)
 
         #firstRow
         for num in range(0,5):
@@ -216,7 +206,7 @@ def checkUserCinko(port):
             CinkoCount = CinkoCount + 1
 
 
-        #firstRow
+        #secondRow
         for num in range(0,5):
             isCinko = False
             for index in range(len(pickedNumberList)):
@@ -228,7 +218,7 @@ def checkUserCinko(port):
             print "Cinko 2. sira"
             CinkoCount = CinkoCount + 1
 
-        #firstRow
+        #thirdRow
         for num in range(0,5):
             isCinko = False
             for index in range(len(pickedNumberList)):
@@ -255,7 +245,12 @@ def checkUserCinko(port):
                 else:
                     return "CRR"
             else:
-                return "CRA Hurray Cinko!"
+                cinkoCount[userIndex] = CinkoCount + cinkoCount[userIndex]
+                if(str(cinkoCount[userIndex])=="3"):
+                    broadcastMessage("GFA " + usernameList[userIndex])
+                else:
+                    return "CRA Hurray Cinko!"
+                    broadcastMessage("ACI Username has made a Cinko")
 
 class Ticket():
     generatedTicket = [[0 for x in range(5)] for x in range(3)]

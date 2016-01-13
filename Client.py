@@ -484,7 +484,7 @@ class ReadQThread(QtCore.QThread):
         if data[0:3] == "GFA":
             #Game finished, winner username is returned
             isGameFinished = True
-            screenQueue._put("The Game has been finished! Congs")
+            screenQueue._put("The Game has been finished! Congs to " + str(data[4:]))
         if data[0:3] == "ACI":
             #A user (username) has made a cinko
             screenQueue._put("A user has made a Cinko! Congs")
